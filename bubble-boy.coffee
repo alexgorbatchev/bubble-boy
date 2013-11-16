@@ -1,14 +1,7 @@
 falafel = require 'falafel'
 css = require 'cssauron-falafel'
 
-isId = css 'id'
-isRoot = css 'root'
-isLookup = css 'lookup'
-isFunction = css 'function'
-isFunctionId = css 'function > .id'
-isFunctionArgument = css 'function > id'
-isVariableDeclaration = css 'variable > id, variable-decl > id'
-isBlockStatement = css 'block'
+isId = isRoot = isLookup = isFunction = isFunctionId = isFunctionArgument = isVariableDeclaration = isBlockStatement = null
 
 path = (node) ->
   return '' unless node?
@@ -23,10 +16,6 @@ getScope = (node) ->
   return parent if isBlockStatement(parent) or isFunction(parent)
   return getScope parent
 
-  # return null unless node?
-  # return node if isBlockStatement(node) or isRoot(node) or isFunction(node)
-  # return getScope node.parent
-
 addToScope = (node, scopeNode = node) ->
   return unless node.name?
   blockNode = getScope scopeNode
@@ -40,7 +29,21 @@ isDeclared = (node) ->
     return true if block.scope?[name]
     node = node.parent
 
+init = ->
+  isId = css 'id'
+  isRoot = css 'root'
+  isLookup = css 'lookup'
+  isFunction = css 'function'
+  isFunctionId = css 'function > .id'
+  isFunctionArgument = css 'function > id'
+  isVariableDeclaration = css 'variable > id, variable-decl > id'
+  isBlockStatement = css 'block'
+
+  init = ->
+
 module.exports = (src, options = {}) ->
+  init()
+
   contextName = options.name or 'sandbox'
 
   results = falafel "#{src}", tolerant: true, (node) ->
