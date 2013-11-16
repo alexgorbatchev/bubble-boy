@@ -1,0 +1,35 @@
+{
+  "name": "bubble-boy",
+  "main": "./bubble-boy.js",
+  "version": "0.4.2",
+  "description": "Modifies JavaScript code to sandbox all global variable declarations and references.",
+  "keywords": [
+    "falafel",
+    "ast",
+    "modification",
+    "sandbox"
+  ],
+  "author": {
+    "name": "Alex Gorbatchev",
+    "email": "alex.gorbatchev@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/*.spec.coffee",
+    "pretest": "./node_modules/.bin/coffee --bare --compile *.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alexgorbatchev/bubble-boy.git"
+  },
+  "dependencies": {
+    "falafel": "~0.3.1",
+    "cssauron-falafel": "~1.1.0"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.3",
+    "chai": "~1.8.1",
+    "mocha": "~1.14.0",
+    "coffee-errors": "~0.8.4"
+  }
+}
