@@ -74,9 +74,9 @@ function f(bar) {
 // }
 
 var f = function() {};
-// f("test");
+f("test");
 
-var f = function() {};
+// var f = function() {};
 // f("test");
 ```
 
