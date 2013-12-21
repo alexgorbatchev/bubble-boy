@@ -42,13 +42,17 @@ describe 'bubble-boy', ->
         sandbox.foo = 20;
       """
 
-    it 'globaly declared functions', ->
+    it 'implicitly globaly declared functions', ->
       test """
-        f = function() {};
-        f("test");
+        function b() {
+          f = function() {};
+          f("test");
+        }
       """, """
-        sandbox.f = function() {};
-        sandbox.f("test");
+        function b() {
+          sandbox.f = function() {};
+          sandbox.f("test");
+        }
       """
 
   describe 'skips', ->

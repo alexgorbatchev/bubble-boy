@@ -1,10 +1,12 @@
 {
   "name": "bubble-boy",
   "main": "./bubble-boy.js",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Modifies JavaScript code to sandbox all global variable declarations and references.",
   "keywords": [
     "falafel",
+    "burrito",
+    "dsl",
     "ast",
     "modification",
     "sandbox"
