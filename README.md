@@ -2,7 +2,8 @@
 
 Modifies JavaScript code to sandbox all global variable declarations and references to avoid scope leaking. Resulting function should be executed in the sandboxing scope `(function() { ... })()` kind of function.
 
-[![Dependency status](https://david-dm.org/alexgorbatchev/bubble-boy.png)](https://david-dm.org/alexgorbatchev/bubble-boy) [![Build Status](https://travis-ci.org/alexgorbatchev/bubble-boy.png)](https://travis-ci.org/alexgorbatchev/bubble-boy)
+[![Dependency status](https://david-dm.org/alexgorbatchev/bubble-boy.png)](https://david-dm.org/alexgorbatchev/bubble-boy)
+[![Build Status](https://travis-ci.org/alexgorbatchev/bubble-boy.png)](https://travis-ci.org/alexgorbatchev/bubble-boy)
 
 ## Support
 
