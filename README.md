@@ -3,7 +3,10 @@
 Modifies JavaScript code to sandbox all global variable declarations and references to avoid scope leaking. Resulting function should be executed in the sandboxing scope `(function() { ... })()` kind of function.
 
 [![Dependency status](https://david-dm.org/alexgorbatchev/bubble-boy.png)](https://david-dm.org/alexgorbatchev/bubble-boy)
-[![Build Status](https://travis-ci.org/alexgorbatchev/bubble-boy.png)](https://travis-ci.org/alexgorbatchev/bubble-boy)
+[![devDependency Status](https://david-dm.org/alexgorbatchev/bubble-boy/dev-status.png)](https://david-dm.org/alexgorbatchev/bubble-boy#info=devDependencies)
+[![Build Status](https://secure.travis-ci.org/alexgorbatchev/bubble-boy.png?branch=master)](https://travis-ci.org/alexgorbatchev/bubble-boy)
+
+[![NPM](https://nodei.co/npm/bubble-boy.png?downloads=true)](https://npmjs.org/package/bubble-boy)
 
 ## Support
 
