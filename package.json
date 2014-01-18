@@ -1,7 +1,7 @@
 {
   "name": "bubble-boy",
   "main": "./bubble-boy.js",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Modifies JavaScript code to sandbox all global variable declarations and references.",
   "keywords": [
     "falafel",
@@ -26,12 +26,12 @@
   },
   "dependencies": {
     "falafel": "~0.3.1",
-    "cssauron-falafel": "~1.1.0"
+    "cssauron-falafel": "~1.2.1"
   },
   "devDependencies": {
     "coffee-script": "~1.6.3",
     "chai": "~1.8.1",
-    "mocha": "~1.14.0",
+    "mocha": "~1.16.0",
     "coffee-errors": "~0.8.4"
   }
 }
